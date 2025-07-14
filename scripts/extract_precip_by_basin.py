@@ -14,7 +14,7 @@ def extract_area_weighted_variable(
     end_year,
     run,
     output_csv,
-    coord_file="/Users/caelum/Documents/GitHub/climate-data_downloads/wrfinput_d02_coord.nc",
+    coord_file="/Users/caelum/Documents/GitHub/climate-data_WUS/wrfinput_d02_coord.nc",
     temp_dir="downloaded_nc_files",
     shapefile_path="/Users/caelum/Documents/GitHub/streamflow_WesternUS/1-data/shapefiles/headwater-catchments_shp/headwater_catchments.shp",
     buffer_m=500,
