@@ -7,7 +7,7 @@ Created on Sun Jul 13 11:42:47 2025
 """
 
 # initial install of packages
-pip install s3fs xarray numpy pandas geopandas rioxarray xesmf tqdm
+# pip install s3fs xarray numpy pandas geopandas rioxarray xesmf tqdm
 
 import os
 import pandas as pd
