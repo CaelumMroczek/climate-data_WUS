@@ -14,10 +14,10 @@ import pandas as pd
 from extract_monthly_variables import extract_monthly_area_weighted_variable
 
 # Configuration
-start_year = 1980
-end_year = 2013
+start_year = 2014
+end_year = 2099
 variables = ["prec", "t2", "t2min", "t2max"]
-run_type = "hist"
+run_type = "585"
 coord_file = "/Users/caelum/Documents/GitHub/climate-data_WUS/wrfinput_d02_coord.nc"
 temp_dir = "downloaded_nc_files"
 shapefile_path = "/Users/caelum/Documents/GitHub/streamflow_WesternUS/1-data/shapefiles/headwater-catchments_shp/headwater_catchments.shp"
@@ -47,6 +47,6 @@ for var in variables:
             print(f"❌ Error processing {var} {year}: {e}")
 
     # Save result
-    out_csv = os.path.join(output_dir, f"{var}_monthly_hist.csv")
+    out_csv = os.path.join(output_dir, f"{var}_monthly_ssp585.csv")
     df_all.to_csv(out_csv, index=False)
     print(f'✅ Saved {var} to {out_csv}')
